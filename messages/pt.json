@@ -1,0 +1,78 @@
+{
+  "metadata": {
+    "title": "Lifetransformers — Transformando vidas",
+    "description": "Ha [X] anos construindo futuros ao lado de [COMUNIDADE]. Conheca nosso impacto."
+  },
+  "nav": {
+    "home": "Inicio",
+    "about": "Quem Somos",
+    "programs": "O Que Fazemos",
+    "impact": "Impacto",
+    "stories": "Historias",
+    "transparency": "Transparencia",
+    "getInvolved": "Faca Parte",
+    "contact": "Contato"
+  },
+  "hero": {
+    "headline": "Onde a cidade desiste, nos comecamos.",
+    "subhead": "Ha [12] anos, no [extremo leste de Sao Paulo], a Lifetransformers trabalha ao lado de familias para transformar vidas. Veja o que isso significa — em rostos, nao em numeros.",
+    "cta": "Apoie nosso trabalho",
+    "ctaSecondary": "Veja o impacto"
+  },
+  "impact": {
+    "title": "Nosso Impacto",
+    "families": "familias acompanhadas",
+    "years": "anos no territorio",
+    "neighborhoods": "bairros",
+    "completion": "dos jovens concluiram o ciclo"
+  },
+  "programs": {
+    "title": "O Que Fazemos",
+    "ongoing": "Em andamento",
+    "completed": "Concluido",
+    "planned": "Planejado",
+    "seeAll": "Ver todos os programas",
+    "learnMore": "Saiba mais"
+  },
+  "stories": {
+    "title": "Historias",
+    "readStory": "Leia a historia de {name}"
+  },
+  "cta": {
+    "closing": "Voce nao precisa resolver tudo. Precisa estar do lado certo de uma historia que ainda esta sendo escrita.",
+    "support": "Apoie nosso trabalho",
+    "partner": "Seja parceiro"
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados.",
+    "legal": "CNPJ: [XX.XXX.XXX/XXXX-XX] | [STATUS JURIDICO]",
+    "newsletter": "Receba nossas novidades",
+    "emailPlaceholder": "Seu e-mail",
+    "subscribe": "Inscrever-se"
+  },
+  "transparency": {
+    "title": "Transparencia",
+    "legalStatus": "Status Juridico",
+    "governance": "Governanca",
+    "financials": "Financas",
+    "reports": "Relatorios",
+    "downloadReport": "Baixar Relatorio Anual"
+  },
+  "getInvolved": {
+    "title": "Faca Parte",
+    "institutional": "Parceiros Institucionais",
+    "corporate": "Empresas",
+    "individual": "Pessoas Fisicas",
+    "volunteer": "Voluntarios"
+  },
+  "contact": {
+    "title": "Contato",
+    "name": "Nome",
+    "email": "E-mail",
+    "subject": "Assunto",
+    "message": "Mensagem",
+    "send": "Enviar",
+    "fundingInquiry": "Financiamento e Parcerias",
+    "general": "Geral"
+  }
+}
