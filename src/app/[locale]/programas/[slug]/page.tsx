@@ -1,9 +1,12 @@
 import { notFound } from "next/navigation";
 import { programs } from "@/content/programs";
+import { routing } from "@/i18n/routing";
 import { ProgramDetail } from "@/components/sections/program-detail";
 
 export function generateStaticParams() {
-  return programs.map((p) => ({ slug: p.slug }));
+  return routing.locales.flatMap((locale) =>
+    programs.map((p) => ({ locale, slug: p.slug }))
+  );
 }
 
 export default async function ProgramPage({

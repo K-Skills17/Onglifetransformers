@@ -41,6 +41,26 @@ export function ImpactPage() {
         </div>
       </section>
 
+      {/* Photo strip */}
+      <section className="py-10 bg-cream">
+        <div className="max-w-6xl mx-auto px-6">
+          <div className="grid grid-cols-3 gap-3">
+            {["/images/programs/esporte.jpg", "/images/gallery-4.jpg", "/images/programs/lazer.jpg"].map((src) => (
+              <div
+                key={src}
+                className="rounded-xl overflow-hidden"
+                style={{ height: "180px" }}
+              >
+                <div
+                  className="w-full h-full"
+                  style={{ backgroundImage: `url('${src}')`, backgroundSize: "cover", backgroundPosition: "center" }}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Full Timeline */}
       <section className="py-20 md:py-28 bg-cream">
         <div className="max-w-4xl mx-auto px-6">
@@ -100,31 +120,6 @@ export function ImpactPage() {
         </div>
       </section>
 
-      {/* Download report */}
-      <section className="py-16 bg-card border-t border-line">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <FadeUp>
-            <h2 className="text-2xl font-serif font-bold text-ink">
-              {locale === "pt"
-                ? "Relatorio Anual"
-                : "Annual Report"}
-            </h2>
-            <p className="mt-3 text-ink-soft">
-              {locale === "pt"
-                ? "Baixe nosso relatorio completo com dados detalhados, financas e resultados."
-                : "Download our full report with detailed data, financials, and results."}
-            </p>
-            <a
-              href="/relatorio-anual.pdf"
-              className="inline-flex items-center mt-6 px-8 py-4 bg-forest text-cream font-semibold rounded-xl hover:bg-forest-light transition-colors"
-            >
-              {locale === "pt"
-                ? "Baixar Relatorio Anual (PDF)"
-                : "Download Annual Report (PDF)"}
-            </a>
-          </FadeUp>
-        </div>
-      </section>
 
       {/* Closing story */}
       {story && (

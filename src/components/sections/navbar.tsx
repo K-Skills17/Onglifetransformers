@@ -22,9 +22,12 @@ export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
 
-  // Extract locale from pathname
   const locale = pathname.split("/")[1] || "pt";
   const otherLocale = locale === "pt" ? "en" : "pt";
+
+  // Only the homepage has a dark hero background
+  const isHome = pathname === `/${locale}` || pathname === `/${locale}/`;
+  const useLightText = isHome && !scrolled;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40);
@@ -38,30 +41,28 @@ export function Navbar() {
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1] }}
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
+        scrolled || !isHome
           ? "bg-cream/95 backdrop-blur-md shadow-sm border-b border-line"
-          : "bg-transparent"
+          : "bg-gradient-to-b from-ink/50 via-ink/20 to-transparent"
       }`}
     >
       <nav className="max-w-7xl mx-auto px-6 flex items-center justify-between h-16 md:h-20">
-        {/* Logo */}
         <Link
           href={`/${locale}`}
           className={`text-xl font-serif font-bold tracking-tight transition-colors ${
-            scrolled ? "text-forest" : "text-cream"
+            useLightText ? "text-cream" : "text-forest"
           }`}
         >
           Lifetransformers
         </Link>
 
-        {/* Desktop nav */}
         <div className="hidden lg:flex items-center gap-8">
           {navLinks.map((link) => (
             <Link
               key={link.key}
               href={`/${locale}${link.href}`}
               className={`text-sm font-medium transition-colors hover:opacity-80 ${
-                scrolled ? "text-ink" : "text-cream/90"
+                useLightText ? "text-cream/90" : "text-ink"
               } ${
                 pathname.includes(link.href) ? "opacity-100" : "opacity-70"
               }`}
@@ -69,23 +70,21 @@ export function Navbar() {
               {t(link.key)}
             </Link>
           ))}
-          {/* Language switcher */}
           <Link
             href={`/${otherLocale}${pathname.replace(`/${locale}`, "")}`}
             className={`text-xs font-semibold uppercase px-3 py-1.5 rounded-full border transition-colors ${
-              scrolled
-                ? "border-forest/30 text-forest hover:bg-forest/5"
-                : "border-cream/30 text-cream hover:bg-cream/10"
+              useLightText
+                ? "border-cream/30 text-cream hover:bg-cream/10"
+                : "border-forest/30 text-forest hover:bg-forest/5"
             }`}
           >
             {otherLocale.toUpperCase()}
           </Link>
         </div>
 
-        {/* Mobile menu button */}
         <button
           onClick={() => setMobileOpen(!mobileOpen)}
-          className={`lg:hidden p-2 ${scrolled ? "text-ink" : "text-cream"}`}
+          className={`lg:hidden p-2 ${useLightText ? "text-cream" : "text-ink"}`}
           aria-label="Toggle menu"
         >
           <svg
@@ -105,7 +104,6 @@ export function Navbar() {
         </button>
       </nav>
 
-      {/* Mobile menu */}
       {mobileOpen && (
         <motion.div
           initial={{ opacity: 0, y: -10 }}

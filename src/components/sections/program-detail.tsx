@@ -42,10 +42,17 @@ export function ProgramDetail({ program }: { program: Program }) {
         </div>
       </section>
 
-      {/* Image placeholder */}
+      {/* Hero image */}
       <div className="max-w-5xl mx-auto px-6 -mt-2">
         <FadeUp>
-          <div className="aspect-[16/7] bg-forest/10 rounded-2xl overflow-hidden" />
+          <div
+            className="aspect-[16/7] rounded-2xl overflow-hidden"
+            style={{
+              backgroundImage: `linear-gradient(to bottom, rgba(28,26,23,0.1), rgba(28,26,23,0.25)), url('${program.hero}')`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          />
         </FadeUp>
       </div>
 

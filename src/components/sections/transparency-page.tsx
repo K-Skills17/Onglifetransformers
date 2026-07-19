@@ -129,37 +129,6 @@ export function TransparencyPage() {
           </div>
         </FadeUp>
 
-        {/* Reports download */}
-        <FadeUp>
-          <div className="p-8 bg-forest text-cream rounded-2xl text-center">
-            <h2 className="text-2xl font-serif font-bold">
-              {locale === "pt" ? "Relatorios e Documentos" : "Reports & Documents"}
-            </h2>
-            <p className="mt-3 text-cream/70">
-              {locale === "pt"
-                ? "Baixe nossos relatorios anuais e documentos de prestacao de contas."
-                : "Download our annual reports and accountability documents."}
-            </p>
-            <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
-              <a
-                href="/relatorio-anual-2024.pdf"
-                className="inline-flex items-center justify-center px-6 py-3 bg-amber text-ink font-semibold rounded-xl hover:bg-amber/90 transition-colors"
-              >
-                {locale === "pt"
-                  ? "Relatorio Anual 2024"
-                  : "Annual Report 2024"}
-              </a>
-              <a
-                href="/capability-statement.pdf"
-                className="inline-flex items-center justify-center px-6 py-3 border-2 border-cream/30 text-cream font-semibold rounded-xl hover:bg-cream/10 transition-colors"
-              >
-                {locale === "pt"
-                  ? "Carta de Apresentacao"
-                  : "Capability Statement"}
-              </a>
-            </div>
-          </div>
-        </FadeUp>
 
         {/* Partners list */}
         <FadeUp>
@@ -194,10 +163,10 @@ export function TransparencyPage() {
                 : "For additional due diligence documents, please contact:"}
             </p>
             <a
-              href="mailto:contato@lifetransformers.com.br"
+              href="mailto:lifetransformers.ong@gmail.com"
               className="inline-block mt-3 text-forest font-semibold hover:text-forest-light transition-colors"
             >
-              contato@lifetransformers.com.br
+              lifetransformers.ong@gmail.com
             </a>
           </div>
         </FadeUp>
