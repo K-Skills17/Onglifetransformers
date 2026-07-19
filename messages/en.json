@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Lifetransformers — Transforming lives",
-    "description": "For [X] years building futures alongside [COMMUNITY]. See our impact."
+    "title": "Lifetransformers — Transforming lives in Itaquera",
+    "description": "Transforming the lives of children, youth and families through sport, culture and leisure in Sao Paulo."
   },
   "nav": {
     "home": "Home",
@@ -15,7 +15,7 @@
   },
   "hero": {
     "headline": "Where the city gives up, we begin.",
-    "subhead": "For [12] years, in [eastern Sao Paulo], Lifetransformers has worked alongside families to transform lives. See what that means — in faces, not numbers.",
+    "subhead": "In Itaquera, Sao Paulo, Lifetransformers transforms the lives of children, youth and families through sport, culture and leisure. See what that means — in faces, not numbers.",
     "cta": "Support our work",
     "ctaSecondary": "See our impact"
   },
@@ -40,13 +40,14 @@
   },
   "cta": {
     "closing": "You don't need to solve everything. You need to be on the right side of a story still being written.",
-    "support": "Support our work",
+    "support": "Make a donation",
+    "volunteer": "Become a volunteer",
     "partner": "Partner with us"
   },
   "footer": {
     "rights": "All rights reserved.",
-    "legal": "CNPJ: [XX.XXX.XXX/XXXX-XX] | [LEGAL STATUS]",
-    "newsletter": "Stay updated",
+    "legal": "Non-profit organization | Sao Paulo, SP",
+    "newsletter": "Get in touch",
     "emailPlaceholder": "Your email",
     "subscribe": "Subscribe"
   },

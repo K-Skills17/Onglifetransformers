@@ -26,9 +26,30 @@ export function Footer() {
           {/* Brand + legal */}
           <div>
             <p className="text-2xl font-serif font-bold text-cream">Lifetransformers</p>
-            <p className="mt-4 text-sm leading-relaxed text-cream/60">
+            <p className="mt-2 text-sm text-cream/40">
               {t("footer.legal")}
             </p>
+            <div className="mt-5 space-y-2">
+              <a
+                href="tel:+5511947396520"
+                className="flex items-center gap-2 text-sm text-cream/60 hover:text-amber transition-colors"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z" />
+                </svg>
+                (11) 94739-6520
+              </a>
+              <a
+                href="mailto:lifetransformers.ong@gmail.com"
+                className="flex items-center gap-2 text-sm text-cream/60 hover:text-amber transition-colors"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                lifetransformers.ong@gmail.com
+              </a>
+            </div>
             <div className="mt-6 flex gap-4">
               <a
                 href="#"
@@ -78,17 +99,31 @@ export function Footer() {
             </nav>
           </div>
 
-          {/* Newsletter */}
+          {/* Contact CTA */}
           <div>
             <p className="text-sm font-semibold uppercase tracking-wider text-cream/40 mb-4">
               {t("footer.newsletter")}
             </p>
-            <a
-              href="mailto:contato@lifetransformers.com.br?subject=Newsletter"
-              className="inline-flex items-center px-5 py-2.5 bg-amber text-ink font-semibold text-sm rounded-lg hover:bg-amber/90 transition-colors"
-            >
-              contato@lifetransformers.com.br
-            </a>
+            <p className="text-sm text-cream/50 leading-relaxed mb-5">
+              {locale === "pt"
+                ? "Quer apoiar, ser voluntário ou fechar uma parceria? Fale com a gente."
+                : "Want to donate, volunteer or partner? Reach out to us."}
+            </p>
+            <div className="space-y-3">
+              <a
+                href="mailto:lifetransformers.ong@gmail.com"
+                className="inline-flex items-center gap-2 px-5 py-2.5 bg-amber text-ink font-semibold text-sm rounded-lg hover:bg-amber/90 transition-colors"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                {locale === "pt" ? "Enviar e-mail" : "Send email"}
+              </a>
+              <p className="text-xs text-cream/30">
+                lifetransformers.ong@gmail.com
+              </p>
+            </div>
           </div>
         </div>
 

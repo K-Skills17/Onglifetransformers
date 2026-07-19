@@ -8,7 +8,7 @@ export const stories: Story[] = [
     program: "geracao-de-renda",
     pullQuote: "Eu achava que tinha perdido o prazo da minha vida. Aqui me mostraram que nao.",
     body: "[A historia completa de Maria — duas ou tres paragrafos sobre sua jornada, escritos com dignidade e concretude. O que era verdade antes, o que mudou, nas palavras e acoes dela.]",
-    portrait: "/images/stories/maria-portrait.jpg",
+    portrait: "/images/stories/portrait-1.jpg",
     date: "2024-03",
   },
   {
